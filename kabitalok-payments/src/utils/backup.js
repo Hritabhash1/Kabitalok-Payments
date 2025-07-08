@@ -1,4 +1,3 @@
-// src/utils/backup.js
 import { db } from './db';
 
 export async function backupDataToFile() {

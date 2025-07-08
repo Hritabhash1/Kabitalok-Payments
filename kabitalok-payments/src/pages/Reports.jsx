@@ -1,4 +1,3 @@
-// src/pages/Reports.jsx
 import { useEffect, useState, useRef } from 'react';
 import { db } from '../utils/db';
 import { jsPDF } from 'jspdf';
@@ -13,10 +12,8 @@ const periods = [
   { label: 'All Time', value: 'all' },
 ];
 
-// no more `person` in emptyExp; we auto‑fill from currentAdmin
 const emptyExp = { date: '', amount: '', reason: '' };
 
-// Helpers to handle DD‑MM‑YYYY
 function formatDateDMY(dateObj) {
   const d = String(dateObj.getDate()).padStart(2, '0');
   const m = String(dateObj.getMonth() + 1).padStart(2, '0');
@@ -36,13 +33,11 @@ export default function Reports({ currentAdmin }) {
   const [newExp, setNewExp] = useState(emptyExp);
   const tableRef = useRef();
 
-  // load data once
   useEffect(() => {
     db.payments.toArray().then(setPayments);
     db.expenditures.toArray().then(setExpenditures);
   }, []);
 
-  // re-filter payments when `filter` or `payments` change
   useEffect(() => {
     const now = new Date();
     let temp = [];
@@ -92,7 +87,6 @@ export default function Reports({ currentAdmin }) {
     setFilteredPayments(temp);
   }, [filter, payments]);
 
-  // inline filter of expenditures
   const filteredExpenditures = expenditures.filter(exp => {
     const now = new Date();
     switch (filter) {
@@ -181,7 +175,6 @@ export default function Reports({ currentAdmin }) {
     doc.save(`report-${filter}-${formatDateDMY(new Date())}.pdf`);
   };
 
-  // add new expenditure
   const handleAddExp = async () => {
     const amt = parseFloat(newExp.amount);
     if (
@@ -212,7 +205,6 @@ export default function Reports({ currentAdmin }) {
         </Link>
       </div>
 
-      {/* Controls */}
       <div style={styles.controls}>
         {periods.map(p => (
           <button
@@ -292,11 +284,9 @@ export default function Reports({ currentAdmin }) {
         </table>
       </div>
 
-      {/* Expenditures Section */}
       <div style={styles.expSection}>
         <h3 style={styles.subTitle}>Expenditures</h3>
 
-        {/* only non‑kabitalok can add */}
         {currentAdmin !== 'kabitalok' && (
           <div style={styles.expControls}>
             <input
@@ -383,7 +373,6 @@ export default function Reports({ currentAdmin }) {
         </table>
       </div>
 
-      {/* Summary */}
       <div style={styles.summary}>
         <h3 style={styles.subTitle}>Summary</h3>
         <div>Total Collected: <strong>Rs {totalCollected}</strong></div>

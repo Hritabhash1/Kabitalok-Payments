@@ -1,4 +1,3 @@
-// src/pages/StudentPayments.jsx
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { db } from '../utils/db';
@@ -40,7 +39,6 @@ export default function StudentPayments({ student, onBack }) {
       console.error('Error loading logo:', err);
     });
 }, []);
-  // load payments whenever filters change
   useEffect(() => {
     (async () => {
       let arr = await db.payments
@@ -154,7 +152,6 @@ const dd    = String(today.getDate()).padStart(2, '0');
 </div>
 
 
-      {/* Filters */}
       <div style={styles.filters}>
         <div style={styles.filterGroup}>
           <label style={styles.filterLabel}>Term:</label>
@@ -178,7 +175,6 @@ const dd    = String(today.getDate()).padStart(2, '0');
         </div>
       </div>
 
-      {/* Add Payment */}
       <div style={styles.addCard}>
         <div style={styles.addForm}>
           <input
@@ -207,7 +203,6 @@ const dd    = String(today.getDate()).padStart(2, '0');
         </div>
       </div>
 
-      {/* History */}
       <div style={styles.history}>
         <h3 style={styles.subTitle}>Payment History ({selectedTerm})</h3>
         <table style={styles.table}>

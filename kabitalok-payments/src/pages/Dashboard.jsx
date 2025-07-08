@@ -1,4 +1,3 @@
-// src/pages/Dashboard.jsx
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { db } from '../utils/db';
@@ -35,7 +34,7 @@ export default function Dashboard({ onLogout }) {
 const fileInputRef = useRef();
 
 function triggerFileSelect() {
-  fileInputRef.current.click(); // Triggers the hidden file input
+  fileInputRef.current.click(); 
 }
 
 function handleRestore(e) {
@@ -280,7 +279,6 @@ function handleWebsignCapture(imageData) {
         </div>
       )}
 
-      {/* Table */}
       <div style={styles.tableContainer}>
         <h2 style={styles.tableTitle}>Student Records</h2>
         <table style={styles.table}>

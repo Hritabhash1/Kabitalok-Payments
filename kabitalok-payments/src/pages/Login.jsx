@@ -7,7 +7,6 @@ export default function Login({ onLogin }) {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
-  // Automatically log in if user is saved in localStorage
   useEffect(() => {
     const stored = localStorage.getItem('loggedInUser');
     if (stored) onLogin(stored);
@@ -58,11 +57,11 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#F3F4F6', // bg-gray-100
+    backgroundColor: '#F3F4F6', 
     padding: 16,
   },
   card: {
-    backgroundColor: '#FFFFFF', // white
+    backgroundColor: '#FFFFFF', 
     padding: 24,
     borderRadius: 12,
     boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
@@ -74,25 +73,25 @@ const styles = {
     fontWeight: 700,
     marginBottom: 16,
     textAlign: 'center',
-    color: '#111827', // gray-900
+    color: '#111827', 
   },
   input: {
     width: '100%',
     padding: '10px 12px',
     marginBottom: 12,
-    border: '1px solid #D1D5DB', // gray-300
+    border: '1px solid #D1D5DB', 
     borderRadius: 6,
     fontSize: 16,
   },
   error: {
-    color: '#DC2626', // red-600
+    color: '#DC2626',
     marginBottom: 12,
     textAlign: 'center',
   },
   button: {
     width: '100%',
     padding: '10px 0',
-    backgroundColor: '#2563EB', // blue-600
+    backgroundColor: '#2563EB', 
     color: '#FFFFFF',
     border: 'none',
     borderRadius: 6,
@@ -102,8 +101,3 @@ const styles = {
     transition: 'background-color 0.2s',
   },
 };
-
-// Optional: add a hover effect via a simple inline event
-// If you want hover darkening, you can add:
-// onMouseEnter={e => e.currentTarget.style.backgroundColor = '#1E40AF'}
-// onMouseLeave={e => e.currentTarget.style.backgroundColor = '#2563EB'}
