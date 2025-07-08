@@ -9,8 +9,7 @@ A lightweight desktop application built using **Tauri**, **React**, and **Vite**
 - ⚛️ React – Frontend framework
 - ⚡ Vite – Build tool for fast dev experience
 - 🦀 Tauri – Native desktop app wrapper (built with Rust)
-- 🧠 TypeScript – Safer and cleaner code
-- 🎨 Tailwind CSS – Styling (optional if you're using it)
+- 🎨 Tailwind CSS – Styling 
 
 ---
 
