@@ -1,0 +1,63 @@
+# Node modules
+node_modules/
+.pnpm/
+.vite/
+
+# Vite cache
+dist/
+.vitepress/
+temp/
+
+src/utils/admins.js
+
+
+# Tauri build output
+/src-tauri/target/
+src-tauri/target/
+src-tauri/.cargo-lock.json
+
+# Cargo artifacts
+Cargo.lock
+Cargo.toml.orig
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Env files
+.env*
+!.env.example
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.sw?
+*.sublime*
+
+# Tauri-generated bundle files
+src-tauri/bundle/
+
+# Tauri Windows build artifacts
+src-tauri/**/*.pdb
+src-tauri/**/*.dll
+
+# Optional: ignore output installers
+*.msi
+*.dmg
+*.deb
+*.AppImage
+*.tar.gz
+*.zip
+
+# Optional: ignore screenshots, if captured in dev
+*.png
+*.jpg
+
+# Misc
+*.log
