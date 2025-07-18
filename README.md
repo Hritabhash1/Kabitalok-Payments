@@ -47,6 +47,7 @@ Cross-Platform: Built with Tauri, the application runs natively on Windows, macO
 📄 jsPDF & jsPDF-AutoTable: For generating client-side PDF documents.
 
 📁 ## Project Structure
+```
 kabitalok-payments/
 ├── public/                  # Static assets
 ├── src/
@@ -59,7 +60,8 @@ kabitalok-payments/
 ├── package.json
 ├── vite.config.js
 └── README.md
-🛠️ Getting Started
+```
+# 🛠️ Getting Started
 Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
 ## Prerequisites
@@ -72,24 +74,26 @@ Tauri Prerequisites: Follow the official guide for your operating system: tauri.
 Installation
 Clone the repository:
 
-Bash
+```
 
 git clone https://github.com/your-username/kabitalok-payments.git
+```
 Navigate to the project directory:
 
-Bash
 
+```
 cd kabitalok-payments
+```
 Install NPM packages:
-
-Bash
-
+```
 npm install
+```
 Run the application in development mode:
 
-Bash
+```
 
 npm run tauri dev
+```
 This will open the application in a new window with hot-reloading enabled.
 
 ## 📦 Building for Production
