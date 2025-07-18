@@ -1,7 +1,7 @@
-💸 ## Kabitalok Payments
+## 💸  Kabitalok Payments
 A lightweight, offline-first desktop application built using Tauri, React, and Vite to manage student payments, donations, and expenditures for Kabitalok. It is designed for performance, security, and simplicity, ensuring all data remains on the user's local machine.
 
-✨ ## Key Features
+## ✨  Key Features
 This application provides a robust set of features to streamline financial management:
 
 Student Management: Add, view, and manage detailed student profiles, including photos and contact information.
@@ -46,7 +46,7 @@ Cross-Platform: Built with Tauri, the application runs natively on Windows, macO
 
 📄 jsPDF & jsPDF-AutoTable: For generating client-side PDF documents.
 
-📁 Project Structure
+📁 ## Project Structure
 kabitalok-payments/
 ├── public/                  # Static assets
 ├── src/
