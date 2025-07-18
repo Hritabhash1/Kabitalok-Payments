@@ -1,7 +1,7 @@
-💸 Kabitalok Payments
+💸 ## Kabitalok Payments
 A lightweight, offline-first desktop application built using Tauri, React, and Vite to manage student payments, donations, and expenditures for Kabitalok. It is designed for performance, security, and simplicity, ensuring all data remains on the user's local machine.
 
-✨ Key Features
+✨ ## Key Features
 This application provides a robust set of features to streamline financial management:
 
 Student Management: Add, view, and manage detailed student profiles, including photos and contact information.
@@ -18,7 +18,7 @@ View data for Today, This Week, This Month, This Year, or All Time.
 
 Drill down into specific months with the "By Month" filter (e.g., "January 2025").
 
-PDF Generation:
+## PDF Generation:
 
 Export detailed summary reports as PDF files, complete with tables for each financial category.
 
@@ -30,13 +30,9 @@ Offline First: All data is stored locally using IndexedDB, ensuring the applicat
 
 Cross-Platform: Built with Tauri, the application runs natively on Windows, macOS, and Linux.
 
-📸 Screenshots
-(Add screenshots of your application here to give users a visual preview.)
 
-Dashboard	Student Profile & Payments	Reports Page
-(Dashboard.png)	(StudentPayments.png)	(Reports.png)
 
-Export to Sheets
+## Export to Sheets
 🚀 Tech Stack
 ⚛️ React: A JavaScript library for building user interfaces.
 
@@ -66,7 +62,7 @@ kabitalok-payments/
 🛠️ Getting Started
 Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
-Prerequisites
+## Prerequisites
 You need to have Node.js, npm (or yarn/pnpm), and the Tauri prerequisites installed on your system.
 
 Node.js: Download & Install Node.js
@@ -96,7 +92,7 @@ Bash
 npm run tauri dev
 This will open the application in a new window with hot-reloading enabled.
 
-📦 Building for Production
+## 📦 Building for Production
 To create a production-ready, native executable for your platform, run the following command:
 
 Bash
@@ -104,7 +100,7 @@ Bash
 npm run tauri build
 The compiled binary/installer will be located in the src-tauri/target/release/ or src-tauri/target/release/bundle/ directory.
 
-🤝 Contributing
+## 🤝 Contributing
 Contributions are welcome! If you have suggestions for how to improve the app, feel free to fork the repository and submit a pull request.
 
 Fork the Project
@@ -117,5 +113,5 @@ Push to the Branch (git push origin feature/AmazingFeature)
 
 Open a Pull Request
 
-📜 License
+## 📜 License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
